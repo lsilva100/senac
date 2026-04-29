@@ -1,0 +1,23 @@
+algoritmo "fibonacci N termos"
+
+var
+numero, termo1, termo2, proximo, i:inteiro
+
+inicio
+
+  //termos da seuqencia (1,0)
+  termo1 <- 0
+  termo2 <- 1
+
+  escreva("digite o numero de termos: ")
+  leia(numero)
+
+  escreval("Seuqencia de fibonacci: ")
+
+  para i de 1 ate numero faca
+    escreva(termo1, " ")
+    proximo <- termo1 + termo2
+    termo1 <- termo2
+    termo2 <- proximo
+    fimpara
+    fimalgoritmo

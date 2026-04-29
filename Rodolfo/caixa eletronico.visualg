@@ -1,0 +1,35 @@
+algoritmo "CaixaEletronico"
+var
+   saldo, saque: real
+inicio
+   
+   saldo <- 1000
+   saque <- -1 
+
+   escreval("--- CAIXA ELETRÔNICO ---")
+   escreval("Saldo inicial: R$", saldo:5:2)
+   escreval("------------------------")
+
+  
+   enquanto (saldo > 0) e (saque <> 0) faca
+      escreva("Digite o valor do saque (ou 0 para sair): R$ ")
+      leia(saque)
+
+      se (saque = 0) entao
+         escreval("Operação finalizada pelo usuário.")
+      senao
+         se (saque > 0) e (saque <= saldo) entao
+            saldo <- saldo - saque
+            escreval("Saque realizado com sucesso!")
+            escreval("Saldo atualizado: R$", saldo:5:2)
+            escreval("------------------------")
+         senao
+            escreval("Valor inválido! Verifique seu saldo e tente novamente.")
+            escreval("Saldo disponível: R$", saldo:5:2)
+            escreval("------------------------")
+         fimse
+      fimse
+   fimenquanto
+
+   escreval("Programa encerrado. Saldo final: R$", saldo:5:2)
+fimalgoritmo

@@ -1,0 +1,25 @@
+algoritmo "Primeiro Programa"
+
+var
+  numero, maior, i: inteiro
+
+inicio
+
+  maior <- 0
+
+  para i de 1 ate 5 faca
+  escreval("Digite o ", i, " numero: ")
+  leia(numero)
+  
+      se (i=1) entao 
+          maior <- numero
+  senao
+      se (numero > maior) entao
+          maior <- numero
+          fimse
+          fimse
+          fimpara
+
+    escreval("o maior numero é: ", maior)
+
+fimalgoritmo

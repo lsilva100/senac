@@ -1,0 +1,19 @@
+algoritmo "senha"
+
+var 
+  senhaCadastrada, SenhaDigitada: caracter
+
+inicio
+  senhaCadastrada <- "1234"
+
+  escreva("digite a senha: ")
+  leia(SenhaDigitada)
+
+  enquanto(SenhaDigitada <> senhaCadastrada) faca
+  escreval("SENHA INCORRETA! Tente novamente.")
+  escreva ("digite a senha: ")
+  leia SenhaDigitada
+  fimenquanto
+
+  escreval("Acesso liberado!")
+  fimalgoritmo

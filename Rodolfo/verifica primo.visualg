@@ -1,0 +1,26 @@
+algoritmo "verifica primo"
+
+var
+ numero, i, divisores: inteiro
+
+inicio
+  escreva("Digite um numero: ")
+  leia(numero)
+
+  divisores<-0
+
+  para i de 1 ate numero faca
+  se (numero mod i =0) entao
+  divisores <- divisores + 1
+  fimse
+  fimpara 
+
+
+  se (divisores = 2) entao
+  escreval(numero, " é primo.")
+  senao
+  escreval (numero, " não é primo.")
+  fimse
+  
+
+fimalgoritmo
